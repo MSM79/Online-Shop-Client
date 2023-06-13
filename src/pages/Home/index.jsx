@@ -1,7 +1,8 @@
 import React from 'react';
+import Header from '../../components/Header';
 
 function Home() {
-  return <div>msm</div>;
+  return <Header />;
 }
 
 export default Home;
