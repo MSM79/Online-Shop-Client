@@ -5,11 +5,11 @@ import './style.css';
 // import pic2 from '../../images/2.jpg';
 // import pic3 from '../../images/3.png';
 // import pic4 from '../../images/4.webp';
-
 const images = [
-  'https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-  'https://images.unsplash.com/photo-1523438097201-512ae7d59c44?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-  'https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+  '/images/1.jpg',
+  '/images/2.jpg',
+  '/images/3.png',
+  '/images/4.webp',
 ];
 const Carousel = () => {
   // We will start by storing the index of the current image in the state.
@@ -63,7 +63,7 @@ const Carousel = () => {
 
   // Tailwind styles. Most importantly notice position absolute, this will sit relative to the carousel's outer div.
   const arrowStyle =
-    'absolute flex text-white text-2xl z-10 h-10 w-10 rounded-full opacity-75 flex items-center justify-center';
+    'absolute flex text-[#333] text-3xl z-10 h-10 w-10 rounded-full opacity-75 flex items-center justify-center';
 
   // Let's create dynamic buttons. It can be either left or right. Using
   // isLeft boolean we can determine which side we'll be rendering our button
@@ -115,11 +115,14 @@ const Carousel = () => {
             {sliderControl(true)}
             {images.map((img, i) => (
               <div
-                className="w-full flex-shrink-0 z-0  h-[400px]"
+                className="w-full flex-shrink-0 z-0  h-[420px]"
                 key={img}
                 ref={refs[i]}
               >
-                <img src={img} className="w-full object-contain" />
+                <img
+                  src={img}
+                  className=" h-full w-full object-cover object-center"
+                />
               </div>
             ))}
             {sliderControl()}
