@@ -108,14 +108,14 @@ const Carousel = () => {
   );
 
   return (
-    <div className="w-screen flex justify-center">
-      <div className="w-screen">
-        <div className="relative w-full">
-          <div className="carousel">
+    <div className="w-screen flex justify-center z-0	">
+      <div className="w-screen z-0">
+        <div className="relative w-full z-0">
+          <div className="carousel z-0">
             {sliderControl(true)}
             {images.map((img, i) => (
               <div
-                className="w-full flex-shrink-0  h-[400px]"
+                className="w-full flex-shrink-0 z-0  h-[400px]"
                 key={img}
                 ref={refs[i]}
               >

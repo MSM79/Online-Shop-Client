@@ -6,7 +6,6 @@ import Banner from '../../components/Banner';
 function Home() {
   return (
     <div>
-      <Banner />
       <Header />
       <Slider />
     </div>
