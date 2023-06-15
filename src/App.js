@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Signin from './pages/signin';
 import Signup from './pages/signup';
+import NotFound from './pages/NotFound';
 import './app.css';
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="signin" element={<Signin />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
