@@ -300,7 +300,7 @@ export default function Example() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="/signin"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Sign in
@@ -308,26 +308,12 @@ export default function Example() {
                   </div>
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="/signup"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Create account
                     </a>
                   </div>
-                </div>
-
-                <div className="border-t border-gray-200 px-4 py-6">
-                  <a href="#" className="-m-2 flex items-center p-2">
-                    <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
-                      alt=""
-                      className="block h-auto w-5 flex-shrink-0"
-                    />
-                    <span className="ml-3 block text-base font-medium text-gray-900">
-                      CAD
-                    </span>
-                    <span className="sr-only">, change currency</span>
-                  </a>
                 </div>
               </Dialog.Panel>
             </Transition.Child>
@@ -494,14 +480,14 @@ export default function Example() {
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                   <a
-                    href="#"
+                    href="/signin"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Sign in
                   </a>
                   <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
                   <a
-                    href="#"
+                    href="/signup"
                     className="text-sm font-medium text-gray-700 hover:text-gray-800"
                   >
                     Create account
