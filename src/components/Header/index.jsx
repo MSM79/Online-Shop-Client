@@ -14,6 +14,7 @@
 */
 import { Fragment, useState } from 'react';
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react';
+import ShoppingCart from '../ShoppingCart';
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
@@ -157,10 +158,12 @@ function classNames(...classes) {
 
 export default function Example() {
   const [open, setOpen] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
 
   return (
     <div className="bg-white">
       {/* Mobile menu */}
+      <ShoppingCart open={openCart} setOpen={setOpenCart} />
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
           <Transition.Child
@@ -507,7 +510,13 @@ export default function Example() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                  <a
+                    href="#"
+                    className="group -m-2 flex items-center p-2"
+                    onClick={() => {
+                      setOpenCart(!openCart);
+                    }}
+                  >
                     <ShoppingBagIcon
                       className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
                       aria-hidden="true"
