@@ -12,7 +12,7 @@ function Home() {
     <div>
       <Header />
       <Slider />
-      <Products />
+      <Products title="Products" classs="py-16 sm:px-6 sm:py-24" />
       <Category />
       <NewsLetter />
       <Footer />

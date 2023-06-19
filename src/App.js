@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Signin from './pages/signin';
 import Signup from './pages/signup';
 import NotFound from './pages/NotFound';
+import ProductsList from './pages/ProductsList';
 import './app.css';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="signin" element={<Signin />} />
         <Route path="signup" element={<Signup />} />
+        <Route path="products" element={<ProductsList />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
