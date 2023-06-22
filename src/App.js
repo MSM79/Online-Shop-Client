@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound';
 import ProductsList from './pages/ProductsList';
 import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
+import ProductOverview from './pages/ProductOverview';
 import './app.css';
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="products" element={<ProductsList />} />
         <Route path="contactus" element={<ContactUs />} />
         <Route path="aboutus" element={<AboutUs />} />
+        <Route path="productoverview" element={<ProductOverview />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
