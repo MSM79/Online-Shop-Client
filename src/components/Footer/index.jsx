@@ -96,7 +96,10 @@ export default function Footer() {
               </svg>
             </a>
 
-            <a href="#" class="text-gray-500 hover:text-gray-900 ">
+            <a
+              href="https://github.com/MSM79/Online-Shop-Client"
+              class="text-gray-500 hover:text-gray-900 "
+            >
               <svg
                 class="w-5 h-5"
                 fill="currentColor"
