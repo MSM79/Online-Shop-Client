@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './style.css';
 
 // import pic1 from '../../images/1.jpg';
@@ -12,34 +12,37 @@ const images = [
   '/images/4.webp',
 ];
 const Carousel = () => {
-  // We will start by storing the index of the current image in the state.
   const [currentImage, setCurrentImage] = React.useState(0);
 
-  // We are using react ref to 'tag' each of the images. Below will create an array of
-  // objects with numbered keys. We will use those numbers (i) later to access a ref of a
-  // specific image in this array.
   const refs = images.reduce((acc, val, i) => {
     acc[i] = React.createRef();
+
     return acc;
   }, {});
 
   const scrollToImage = (i) => {
-    // First let's set the index of the image we want to see next
+    if (!refs[i].current) {
+      return;
+    }
+
     setCurrentImage(i);
-    // Now, this is where the magic happens. We 'tagged' each one of the images with a ref,
-    // we can then use built-in scrollIntoView API to do eaxactly what it says on the box - scroll it into
-    // your current view! To do so we pass an index of the image, which is then use to identify our current
-    // image's ref in 'refs' array above.
+
     refs[i].current.scrollIntoView({
-      //     Defines the transition animation.
       behavior: 'smooth',
-      //      Defines vertical alignment.
       block: 'nearest',
-      //      Defines horizontal alignment.
       inline: 'start',
     });
   };
 
+  useEffect(() => {
+    const p = setInterval(() => {
+      scrollToImage(currentImage + 1);
+    }, 5_000);
+
+    return () => {
+      clearInterval(p);
+    };
+  }, [JSON.stringify(refs)]);
   // Some validation for checking the array length could be added if needed
   const totalImages = images.length;
 
