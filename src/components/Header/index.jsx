@@ -40,11 +40,6 @@ const navigation = {
             { name: 'Dresses', href: '#' },
             { name: 'Pants', href: '#' },
             { name: 'Denim', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
           ],
         },
         {
@@ -54,9 +49,6 @@ const navigation = {
             { name: 'Watches', href: '#' },
             { name: 'Wallets', href: '#' },
             { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
           ],
         },
         {
@@ -65,9 +57,6 @@ const navigation = {
           items: [
             { name: 'Full Nelson', href: '#' },
             { name: 'My Way', href: '#' },
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Significant Other', href: '#' },
           ],
         },
       ],
@@ -101,10 +90,6 @@ const navigation = {
             { name: 'Tops', href: '#' },
             { name: 'Pants', href: '#' },
             { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
           ],
         },
         {
@@ -114,26 +99,12 @@ const navigation = {
             { name: 'Watches', href: '#' },
             { name: 'Wallets', href: '#' },
             { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
-          ],
-        },
-        {
-          id: 'brands',
-          name: 'Brands',
-          items: [
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
           ],
         },
       ],
     },
   ],
   pages: [
-    { name: 'Company', href: '#' },
     { name: 'Products', href: '/products' },
     { name: 'Contact Us', href: '/contactus' },
     { name: 'About Us', href: '/aboutus' },
@@ -275,7 +246,7 @@ export default function Header() {
                   </Tab.Panels>
                 </Tab.Group>
 
-                <div className="space-y-6 border-t border-gray-200 px-4 py-6 overflow-x-hidden">
+                <div className="space-y-6 border-t border-gray-200 px-4 py-14 overflow-x-hidden">
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a
