@@ -4,7 +4,6 @@ import { Dialog, Popover, Tab, Transition, Menu } from '@headlessui/react';
 import ShoppingCart from '../ShoppingCart';
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
@@ -14,6 +13,7 @@ const user = {
   email: 'Mohammadmarandi89@gmail.com',
   imageUrl: '/images/mohammad.jpg',
 };
+
 const userNavigation = [
   { name: 'Your Profile', href: '/profile' },
   { name: 'Sign out', href: '#' },
@@ -28,16 +28,14 @@ const navigation = {
         {
           name: 'New Arrivals',
           href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+          imageSrc: '/images/40.jpg',
           imageAlt:
             'Models sitting back to back, wearing Basic Tee in black and bone.',
         },
         {
           name: 'Basic Tees',
           href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
+          imageSrc: '/images/41.jpg',
           imageAlt:
             'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
         },
@@ -79,16 +77,14 @@ const navigation = {
         {
           name: 'New Arrivals',
           href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
+          imageSrc: '/images/42.jpg',
           imageAlt:
             'Drawstring top with elastic loop closure and textured interior padding.',
         },
         {
           name: 'Artwork Tees',
           href: '#',
-          imageSrc:
-            'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
+          imageSrc: '/images/43.jpg',
           imageAlt:
             'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
         },
@@ -119,6 +115,7 @@ const navigation = {
     { name: 'Products', href: '/products' },
     { name: 'Contact Us', href: '/contactus' },
     { name: 'About Us', href: '/aboutus' },
+    { name: 'Dashboard(Admin)', href: '/admin' },
   ],
 };
 
@@ -316,12 +313,12 @@ export default function Header() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Your Company</span>
+                <a href="/">
+                  <span className="sr-only">Online Shop</span>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
+                    src="/images/logo.svg"
+                    alt="logo"
                   />
                 </a>
               </div>
