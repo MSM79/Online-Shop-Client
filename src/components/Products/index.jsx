@@ -29,10 +29,10 @@ const products = [
   },
   {
     id: 4,
-    name: 'Machined Mechanical Pencil',
+    name: 'Artwork Tee',
     href: '#',
     price: '$35',
-    imageSrc: '/images/19.jpg',
+    imageSrc: '/images/16.jpg',
     imageAlt:
       'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },
@@ -65,7 +65,7 @@ const products = [
   },
   {
     id: 9,
-    name: 'Womens Basic Tee',
+    name: 'Basic Tee',
     href: '#',
     price: '$37',
     imageSrc: '/images/32.jpg',
@@ -74,14 +74,13 @@ const products = [
   },
   {
     id: 10,
-    name: 'Mens Artwork Tee',
+    name: 'Artwork Tee',
     href: '#',
     price: '$36',
     imageSrc: '/images/31.jpg',
     imageAlt:
       'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },
-  // More products...
 ];
 
 export default function Products(props) {
@@ -89,11 +88,13 @@ export default function Products(props) {
   return (
     <div className="bg-white">
       <div
-        className={'mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8' + props.classs}
+        className={
+          'mx-auto max-w-2xl px-4 lg:max-w-7xl lg:px-8 xs:pb-2' + props.classs
+        }
       >
         <h2 className="text-3xl py-4">{title}</h2>
 
-        <div className="grid grid-cols-3 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className="grid grid-cols-3 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 xs:py-4">
           {products.map((product) => (
             <a key={product.id} href={product.href} className="group">
               <div className="aspect-h-1 w-full overflow-hidden rounded-lg xl:aspect-h-8 xl:aspect-w-7">
@@ -108,7 +109,7 @@ export default function Products(props) {
                 {product.price}
               </p>
               <a href="#">
-                <button className="bg-slate-100 py-2 px-4 rounded-lg font-medium w-full mt-2 hover:bg-slate-200">
+                <button className="bg-slate-100 lg:py-2 lg:px-4 rounded-lg font-medium w-full mt-2 hover:bg-slate-200 xs:px-1 xs:py-1 xs:text-sm">
                   Add to bag
                 </button>
               </a>
