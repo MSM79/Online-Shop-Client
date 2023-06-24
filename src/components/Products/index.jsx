@@ -3,31 +3,27 @@ import React from 'react';
 const products = [
   {
     id: 1,
-    name: 'Earthen Bottle',
+    name: 'Basic Tee',
     href: '#',
     price: '$48',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
-    imageAlt:
-      'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    imageSrc: '/images/16.jpg',
+    imageAlt: 'Black',
   },
   {
     id: 2,
-    name: 'Nomad Tumbler',
+    name: 'Basic Tee',
     href: '#',
     price: '$35',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+    imageSrc: '/images/17.jpg',
     imageAlt:
       'Olive drab green insulated bottle with flared screw lid and flat top.',
   },
   {
     id: 3,
-    name: 'Focus Paper Refill',
+    name: 'Basic Tee',
     href: '#',
     price: '$89',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+    imageSrc: '/images/18.jpg',
     imageAlt:
       'Person using a pen to cross a task off a productivity paper card.',
   },
@@ -36,18 +32,52 @@ const products = [
     name: 'Machined Mechanical Pencil',
     href: '#',
     price: '$35',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
+    imageSrc: '/images/19.jpg',
     imageAlt:
       'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },
   {
     id: 5,
-    name: 'Machined Mechanical Pencil',
+    name: 'Artwork Tee',
     href: '#',
     price: '$35',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-07-product-02.jpg',
+    imageSrc: '/images/23.jpg',
+    imageAlt:
+      'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  {
+    id: 6,
+    name: 'Artwork Tee',
+    href: '#',
+    price: '$35',
+    imageSrc: '/images/24.jpg',
+    imageAlt:
+      'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  {
+    id: 7,
+    name: 'Artwork Tee',
+    href: '#',
+    price: '$35',
+    imageSrc: '/images/25.jpg',
+    imageAlt:
+      'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  {
+    id: 9,
+    name: 'Womens Basic Tee',
+    href: '#',
+    price: '$37',
+    imageSrc: '/images/32.jpg',
+    imageAlt:
+      'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+  {
+    id: 10,
+    name: 'Mens Artwork Tee',
+    href: '#',
+    price: '$36',
+    imageSrc: '/images/31.jpg',
     imageAlt:
       'Hand holding black machined steel mechanical pencil with brass tip and top.',
   },
