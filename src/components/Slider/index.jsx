@@ -6,10 +6,10 @@ import './style.css';
 // import pic3 from '../../images/3.png';
 // import pic4 from '../../images/4.webp';
 const images = [
-  '/images/1.jpg',
-  '/images/2.jpg',
-  '/images/3.png',
-  '/images/4.webp',
+  '/images/53.jpg',
+  '/images/52.jpg',
+  '/images/50.jpg',
+  '/images/51.webp',
 ];
 const Carousel = () => {
   const [currentImage, setCurrentImage] = React.useState(0);
