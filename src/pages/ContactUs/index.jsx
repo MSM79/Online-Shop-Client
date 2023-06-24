@@ -2,11 +2,14 @@ import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
+import Title from '../../components/Title';
+
 export default function AboutUs() {
   return (
     <div>
       <Header />
-      <section className="py-24 lg:px-20 lg:py-36 bg-white overflow-hidden">
+      <Title text="Contact Us" />
+      <section className="py-20 lg:px-20 lg:py-26 overflow-hidden">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap -m-8 px-14">
             <div className="w-full md:w-1/2 p-8">
@@ -27,70 +30,69 @@ export default function AboutUs() {
                 <span>Co-Founder, Online Shop</span>
               </div>
             </div>
-            <div className="w-full md:w-1/2 p-8">
-              <form className="flex flex-wrap -m-3" action="#">
-                <div className="w-full md:w-1/2 p-3">
-                  <label className="block">
-                    <input
-                      className="px-4 py-4 w-full text-gray-700 tracking-tight placeholder-gray-700 outline-none border border-gray-700 focus:border-gray-400 rounded-lg transition duration-200"
-                      id="contactInput1-1"
-                      type="text"
-                      placeholder="First Name"
-                    />
-                  </label>
-                </div>
-                <div className="w-full md:w-1/2 p-3">
-                  <label className="block">
-                    <input
-                      className="px-4 py-4 w-full text-gray-700 tracking-tight placeholder-gray-700 outline-none border border-gray-700 focus:border-gray-400 rounded-lg transition duration-200"
-                      id="contactInput1-2"
-                      type="text"
-                      placeholder="Last Name"
-                    />
-                  </label>
-                </div>
-                <div className="w-full md:w-1/2 p-3">
-                  <label className="block">
-                    <input
-                      className="px-4 py-4 w-full text-gray-700 tracking-tight placeholder-gray-700 outline-none border border-gray-700 focus:border-gray-400 rounded-lg transition duration-200"
-                      id="contactInput1-3"
-                      type="text"
-                      placeholder="Email Address"
-                    />
-                  </label>
-                </div>
-                <div className="w-full md:w-1/2 p-3">
-                  <label className="block">
-                    <input
-                      className="px-4 py-4 w-full text-gray-700 tracking-tight placeholder-gray-700 outline-none border border-gray-700 focus:border-gray-400 rounded-lg transition duration-200"
-                      id="contactInput1-4"
-                      type="text"
-                      placeholder="Phone Number"
-                    />
-                  </label>
-                </div>
-                <div className="w-full p-3">
-                  <label className="block">
-                    <input
-                      className="px-4 py-4 w-full text-gray-700 tracking-tight placeholder-gray-700 outline-none border border-gray-700 focus:border-gray-400 rounded-lg transition duration-200"
-                      id="contactInput1-5"
-                      type="text"
-                      placeholder="Company (Optional)"
-                    />
-                  </label>
-                </div>
-                <div className="w-full p-3">
-                  <a
-                    className="inline-block mb-4 px-5 py-4 w-full text-white text-center font-semibold tracking-tight bg-indigo-500 hover:bg-indigo-600 rounded-lg focus:ring-4 focus:ring-indigo-300 transition duration-200"
-                    href="#"
-                  >
-                    Try 14 Days Free Trial
-                  </a>
-                  <span className="text-sm text-gray-600 tracking-tight">
-                    * We never share user details with third parties, period.
-                  </span>
-                </div>
-              </form>
+            <div className="w-full md:w-1/2 p-8 space-y-10 items-start flex flex-col justify-center">
+              <div className="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
+
+                <p className="text-gray-600 font-semibold ml-4">
+                  mohammadmarandi89@gmail.com
+                </p>
+              </div>
+              <div className="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                  />
+                </svg>
+                <p className="text-gray-600 font-semibold  ml-4">09109968992</p>
+              </div>
+
+              <div className="flex">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                  />
+                </svg>
+                <p className="text-gray-600 font-semibold ml-4">
+                  Shamsipour Technichal Collage
+                </p>
+              </div>
             </div>
           </div>
         </div>
