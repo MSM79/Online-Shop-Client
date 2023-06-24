@@ -9,6 +9,7 @@ import ContactUs from './pages/ContactUs';
 import AboutUs from './pages/AboutUs';
 import ProductOverview from './pages/ProductOverview';
 import AdminPanel from './pages/AdminPanel';
+import UserProfile from './pages/UserProfile';
 import './app.css';
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="productoverview" element={<ProductOverview />} />
         <Route path="admin" element={<AdminPanel />} />
+        <Route path="profile" element={<UserProfile />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
