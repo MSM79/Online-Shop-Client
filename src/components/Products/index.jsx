@@ -4,7 +4,7 @@ const products = [
   {
     id: 1,
     name: 'Basic Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$48',
     imageSrc: '/images/16.jpg',
     imageAlt: 'Black',
@@ -12,7 +12,7 @@ const products = [
   {
     id: 2,
     name: 'Basic Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$35',
     imageSrc: '/images/17.jpg',
     imageAlt:
@@ -21,7 +21,7 @@ const products = [
   {
     id: 3,
     name: 'Basic Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$89',
     imageSrc: '/images/18.jpg',
     imageAlt:
@@ -30,7 +30,7 @@ const products = [
   {
     id: 4,
     name: 'Artwork Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$35',
     imageSrc: '/images/16.jpg',
     imageAlt:
@@ -39,7 +39,7 @@ const products = [
   {
     id: 5,
     name: 'Artwork Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$35',
     imageSrc: '/images/23.jpg',
     imageAlt:
@@ -48,7 +48,7 @@ const products = [
   {
     id: 6,
     name: 'Artwork Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$35',
     imageSrc: '/images/24.jpg',
     imageAlt:
@@ -57,7 +57,7 @@ const products = [
   {
     id: 7,
     name: 'Artwork Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$35',
     imageSrc: '/images/25.jpg',
     imageAlt:
@@ -66,7 +66,7 @@ const products = [
   {
     id: 9,
     name: 'Basic Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$37',
     imageSrc: '/images/32.jpg',
     imageAlt:
@@ -75,7 +75,7 @@ const products = [
   {
     id: 10,
     name: 'Artwork Tee',
-    href: '#',
+    href: '/productoverview',
     price: '$36',
     imageSrc: '/images/31.jpg',
     imageAlt:
@@ -108,7 +108,7 @@ export default function Products(props) {
               <p className="mt-1 text-lg font-medium text-gray-900">
                 {product.price}
               </p>
-              <a href="#">
+              <a href="/productoverview">
                 <button className="bg-slate-100 lg:py-2 lg:px-4 rounded-lg font-medium w-full mt-2 hover:bg-slate-200 xs:px-1 xs:py-1 xs:text-sm">
                   Add to bag
                 </button>
