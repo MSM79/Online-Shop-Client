@@ -8,25 +8,22 @@ const product = {
   name: 'Basic Tee 6-Pack',
   price: '$192',
   href: '#',
-  breadcrumbs: [
-    { id: 1, name: 'Men', href: '#' },
-    { id: 2, name: 'Clothing', href: '#' },
-  ],
+
   images: [
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-secondary-product-shot.jpg',
+      src: '/images/60.jpg',
       alt: 'Two each of gray, white, and black shirts laying flat.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-01.jpg',
+      src: '/images/61.jpg',
       alt: 'Model wearing plain black basic tee.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-tertiary-product-shot-02.jpg',
+      src: '/images/62.jpg',
       alt: 'Model wearing plain gray basic tee.',
     },
     {
-      src: 'https://tailwindui.com/img/ecommerce-images/product-page-02-featured-product-shot.jpg',
+      src: '/images/63.jpg',
       alt: 'Model wearing plain white basic tee.',
     },
   ],

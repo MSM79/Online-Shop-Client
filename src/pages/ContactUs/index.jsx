@@ -4,7 +4,7 @@ import Footer from '../../components/Footer';
 
 import Title from '../../components/Title';
 
-export default function AboutUs() {
+export default function ContactUs() {
   return (
     <div>
       <Header />

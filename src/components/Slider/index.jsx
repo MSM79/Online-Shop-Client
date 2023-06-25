@@ -1,10 +1,6 @@
 import React, { useEffect } from 'react';
 import './style.css';
 
-// import pic1 from '../../images/1.jpg';
-// import pic2 from '../../images/2.jpg';
-// import pic3 from '../../images/3.png';
-// import pic4 from '../../images/4.webp';
 const images = [
   '/images/53.jpg',
   '/images/52.jpg',
@@ -43,11 +39,8 @@ const Carousel = () => {
       clearInterval(p);
     };
   }, [JSON.stringify(refs)]);
-  // Some validation for checking the array length could be added if needed
   const totalImages = images.length;
 
-  // Below functions will assure that after last image we'll scroll back to the start,
-  // or another way round - first to last in previousImage method.
   const nextImage = () => {
     if (currentImage >= totalImages - 1) {
       scrollToImage(0);
@@ -64,13 +57,9 @@ const Carousel = () => {
     }
   };
 
-  // Tailwind styles. Most importantly notice position absolute, this will sit relative to the carousel's outer div.
   const arrowStyle =
     'absolute flex text-[#333] text-3xl z-10 h-10 w-10 rounded-full opacity-75 flex items-center justify-center';
 
-  // Let's create dynamic buttons. It can be either left or right. Using
-  // isLeft boolean we can determine which side we'll be rendering our button
-  // as well as change its position and content.
   const sliderControl = (isLeft) => (
     <button
       type="button"
