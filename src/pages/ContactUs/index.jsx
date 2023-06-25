@@ -21,8 +21,8 @@ export default function AboutUs() {
                   className="mb-6 text-3xl font-semibold"
                   style={{ letterspacing: '-0.5px' }}
                 >
-                  &ldquo;Basko is a total game-changer! Streamlined workflow
-                  &amp; productivity. Highly recommend!&rdquo;
+                  Please provide us with as much detail as possible so that we
+                  can better assist you.
                 </h3>
                 <h4 className="font-semibold tracking-tight mb-1">
                   Mohammad Seyfi Marandi
@@ -90,7 +90,7 @@ export default function AboutUs() {
                   />
                 </svg>
                 <p className="text-gray-600 font-semibold ml-4">
-                  Shamsipour Technichal Collage
+                  Shamsipour Technichal and Vocational College
                 </p>
               </div>
             </div>
